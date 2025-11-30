@@ -25,9 +25,9 @@ st.sidebar.markdown("**Équipe IMPACTIS**")
 # Chemins (Adapter le chemin car nous sommes dans un sous-dossier 'pages')
 # On remonte d'un niveau pour trouver les fichiers .pkl et .json à la racine du dépôt
 current_dir = Path(__file__).parent.parent 
-model_path = current_dir / 'best_churn_model_pro_20251129_080606.pkl'
-metadata_path = current_dir / 'model_metadata_pro_20251129_080606.json'
-preprocessor_path = current_dir / 'preprocessor_pro_20251129_080606.pkl'
+model_path = current_dir /'pages'/ 'best_churn_model_pro_20251129_080606.pkl'
+metadata_path = current_dir / 'pages'/'model_metadata_pro_20251129_080606.json'
+preprocessor_path = current_dir / 'pages'/'preprocessor_pro_20251129_080606.pkl'
 
 # Initialisation session
 if 'analysis_history' not in st.session_state:
